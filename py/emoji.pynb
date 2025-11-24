@@ -1,0 +1,27 @@
+import re
+
+# Define a function to convert emoji to text using regex
+def emoji_to_text(text):
+   emoji_pattern = re.compile(
+      '[-'  # emoticons
+      '-'  # symbols & pictographs
+      '-'  # transport & map symbols
+      '-'  # alchemical symbols
+      '-'  # Geometric Shapes Extended
+      '-'  # Supplemental Arrows-C
+      '-'  # Supplemental Symbols and Pictographs
+      '-'  # Chess Symbols
+      '-'  # Symbols and Pictographs Extended-A
+      ']+',
+      flags=re.UNICODE,
+   )
+   return emoji_pattern.sub(r'', text)
+
+# Sample text with emojis
+text_with_emojis = 'I love Python! '
+
+# Convert emojis to text
+text_without_emojis = emoji_to_text(text_with_emojis)
+
+print('Original Text:', text_with_emojis)
+print('Text without Emojis:', text_without_emojis)
