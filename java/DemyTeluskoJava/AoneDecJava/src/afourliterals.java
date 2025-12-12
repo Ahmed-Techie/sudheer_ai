@@ -1,4 +1,4 @@
-public class afourliterals {
+public class Afourliterals {
     public static void main(String[] args) {
         int num = 10_00_00_000;
         double exe = 12e10;
