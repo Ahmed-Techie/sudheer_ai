@@ -1,5 +1,6 @@
 public class Multida {
     public static void main(String[] args) {
+        System.out.println();
          int nums [][]= new int[3][3];
         int num1[] = new int[3];
 for (int i = 0; i < 3; i++) { // Iterate over rows
@@ -28,6 +29,6 @@ System.out.print(element + " ");
 }
 System.out.println();
 }
-
+System.out.println();
     }
 }
